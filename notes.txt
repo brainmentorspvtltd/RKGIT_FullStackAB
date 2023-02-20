@@ -1,0 +1,72 @@
+Programming
+- Procedural
+- Object Oriented - follows class and object
+- Functional
+
+
+Java
+- Platform Independent
+- Statically Typed
+- Object Oriented
+========================
+1. Repeat as it is
+2. Experiment
+3. Just Write Program
+4. Self Programming/Logic Building
+========================
+First Program in Java
+- Every Java Program Starts with a class
+- Class name should start with a capital letter
+- Class name should be same as file name
+- Class name can only start with letters, underscore or dollar sign
+
+To Execute Java Program
+- compile 
+	- open command prompt
+	- type : javac FileName.java
+	- javac - compile java code
+		- JDK gets executed when we type javac
+- interpret
+	- type : java ClassName
+	- now JRE will get executed
+	- JRE has JVM and JVM is responsible for interpreter
+
+- JVM search for main method
+
+Why main is public ?
+- we have 4 types of scope in Java
+  - public - accessible outside the directory
+  - protected - accessible with the help of inheritance
+  - default - accessible only within package/folder
+  - private - accessible only within the class
+
+Why main is static ?
+- static things in java gets loaded with class
+
+Why main is void ?
+- because main returns nothing, it's a entry point
+
+Why we pass String args ?
+- command line arguments
+- it's an array of String type
+
+What is System ?
+- System is pre-defined class
+  System.out
+  System.in
+  System.err
+
+What is out ?
+- out is an instance/object of PrintStream class
+- but defined inside System class
+
+What is println ?
+- method of PrintStream class
+
+
+
+
+
+
+
+
