@@ -86,8 +86,40 @@ public class Employee extends Object {
 		this.location = location;
 	}
 	
+	// Earnings
+	public double getHRA() {
+		return this.salary * 0.30;
+	}
+	public double getTA() {
+		return this.salary * 0.20;
+	}
+	public double getMA() {
+		return this.salary * 0.15;
+	}
+	public double getDA() {
+		return this.salary * 0.35;
+	}
+	
+	// Deductions
+	public double getTDS() {
+		return this.salary * 0.10;
+	}
+	public double getPF() {
+		return this.salary * 0.05;
+	}
+	
+	public double netSalary() {
+		double earning = this.salary + getHRA() + getDA() + getMA() + getTA();
+		double deduction = getTDS() + getPF();
+		double net = earning - deduction;
+		return net;
+	}
+	
 	@Override
 	public String toString() {
+		CommonUtils utils = new CommonUtils();
+		this.name = utils.formatName(name);
+		this.salary = netSalary();
 		return this.company + 
 				"\n" + this.name + 
 				"\n" + this.salary;
