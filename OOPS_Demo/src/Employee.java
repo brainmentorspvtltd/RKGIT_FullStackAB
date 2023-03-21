@@ -1,3 +1,5 @@
+import java.util.Date;
+
 //Encapsulation
 //- wrapping of data into one single unit known as class
 //- wrapping of data members and methods
@@ -117,12 +119,17 @@ public class Employee extends Object {
 	
 	@Override
 	public String toString() {
-		CommonUtils utils = new CommonUtils();
+		CommonUtils utils = new CommonUtils("en","US");
+		//CommonUtils utils = new CommonUtils("hi","IN");
 		this.name = utils.formatName(name);
 		this.salary = netSalary();
-		return this.company + 
+		String sal = utils.formatSalary(salary);
+		//Date date = utils.formatDate();
+		String date = utils.formatDate();
+		return this.company +
+				"\n" + date +
 				"\n" + this.name + 
-				"\n" + this.salary;
+				"\n" + sal;
 	}
 	
 }
