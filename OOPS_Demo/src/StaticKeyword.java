@@ -14,6 +14,7 @@ class Customer {
 	
 	// Init Block
 	{
+		//String dept = "IT";
 		System.out.println("Init block executed...");
 	}
 	

@@ -1,9 +1,14 @@
 class SimpleUser {
-	
+	int calc() {
+		return 0;
+	}
 }
 
 class PrimeUser extends SimpleUser {
-	
+	@Override
+	int calc() {
+		return 0;
+	}
 }
 
 class SimpleLogin {
